@@ -6,7 +6,7 @@
 
 		<link rel="shortcut icon" type="image/png" href="Resources/Images/Favicon.ico">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
 		<!-- LinkedinCard -->
 		<meta name="title" property="og:title" content="Latino Francesco CV">
@@ -24,7 +24,11 @@
     <!-- CustomCSS -->
     <link rel="stylesheet" type="text/css" href="CSS/StyleSheet.css">
 
+		<!-- PDFObject JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.8/pdfobject.js" integrity="sha512-aqpxRD4NwJUXN742KSiIr4zARkh+WTeaWwx0DYuy+9eARX/glcCFtHSeETrIc6V+1BwYfMwvPz5KWlVtRyXikQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   </head>
+
   <body class="bg-light">
 
 		<!-- +Notifica -->
@@ -37,8 +41,6 @@
     <!-- +CONTAINER -->
     <div class="container mt-4">
 
-			
-
       <!-- +ROW -->
       <div class="row justify-content-center">
 
@@ -50,7 +52,7 @@
 								
                 <div class="card-body"  style="max-height: 300px; background: linear-gradient(45deg, rgba(29, 236, 197, 0.5), rgba(91, 14, 214, 0.5) 100%);">
 									
-									<img src="Resources/Images/User.jpg" alt="" class="img-fluid img-fluid-user max-height: 40%; rounded border border-3 mx-auto d-block"> </img>
+									<img src="Resources/Images/User.png" alt="" class="img-fluid img-fluid-user max-height: 40%; rounded border border-3 mx-auto d-block"> </img>
 								
                 </div>
               </div>
@@ -70,7 +72,7 @@
 										<div class="fa-2x">
 											<i class="fa-solid fa-cake text" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-circle"></i>
 										</div>
-										<div class="ms-1">
+										<div class="ms-2">
 											25 Agosto 1998
 										</div>
 									</div>
@@ -81,7 +83,7 @@
 										<div class="fa-2x">
 											<i class="fa-solid fa-home text" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-circle"></i>
 										</div>
-										<div class="ms-1">
+										<div class="ms-2">
 											Torrevecchia Teatina (CH)
 										</div>
 									</div>
@@ -92,8 +94,8 @@
 										<div class="fa-2x">
 											<i class="fa-solid fa-envelope text" data-fa-transform="shrink-8" data-fa-mask="fa-solid fa-circle"></i>
 										</div>
-										<div class="mt-3 ms-1">
-											<ul class="list-unstyled ms-1">
+										<div class="mt-3 ms-2">
+											<ul class="list-unstyled">
 												<li><i class="fa-fw fa-solid fa-phone text-muted"></i> <a href="#" class="text" onclick="copyToClipboard('#Phone')" id="Phone">3913858248</a></li>
 												<li><i class="fa-fw fa-solid fa-envelope text-muted"></i><a href="mailto:latinof98@outlook.it" class="text" target="_blank"> latinof98@outlook.it </a></li>
 												<li><i class="fa-fw fa-brands fa-linkedin text-muted"></i> <a href="https://www.linkedin.com/in/latinof/" class="text" target="_blank">LatinoF</a></li>
@@ -201,7 +203,7 @@
 							<!-- -Lingue -->
 
 							<!-- +Download -->
-							<div class="text-center">
+							<!-- <div class="text-center">
 								<a class="btn btn-lg" role="button" href="https://drive.google.com/u/0/uc?id=11xVudeqtwocgrXzyi_hnFadV3Wsj-SuP&export=download" download="Francesco Latino CV.pdf">
 									<i class="fa-solid fa-fw fa-download"></i> Scarica CV
 									<i class="fa-regular fa-fw fa-file-pdf"></i>
@@ -251,7 +253,7 @@
               		</div>
 									<!-- -UNIDAV -->
 
-									<!-- +Mysekf -->
+									<!-- +Myself -->
 									<div class="row g-3">
 										<div class="d-flex">
 											<i class="fa-solid fa-house fa-fw fa-3x text" ></i>
@@ -344,7 +346,7 @@
 																<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 															</div>
 															<div class="modal-body">
-																<img src="LTF New Tab.jpg" loading="lazy" alt="LTF New Tab Page Screenshot" class="img-fluid d-block mx-auto rounded">
+																<img src="Resources/Images/LTFNewTab/LTFNewTab.jpg" loading="lazy" alt="LTF New Tab Page Screenshot" class="img-fluid d-block mx-auto border2">
 															</div>
 															<div class="modal-footer">
 																<button type="button" class="btn" data-bs-dismiss="modal">Chiudi</button>
@@ -370,7 +372,7 @@
 													<h5 class="ms-2">
 														<a href="https://github.com/LatinoF/LTFWebCV" class="text" target="_blank"> LTF Web CV: GitHub <i class="fa-solid fa-arrow-up-right-from-square fa-xs text-muted"></i></a>
 													</h5>
-													<!-- <small class="d-block text-uppercase fw-bold text-muted"><time datetime="#">Agosto 2021</time></small> -->
+													<!-- <small class="d-block text-uppercase fw-bold text-muted"><time datetime="#">Giugno 2022</time></small> -->
 												</div>
 												<!-- +WebCVModal -->
 												<button type="button" class="btn mt-2" data-bs-toggle="modal" data-bs-target="#WebCV"><i class="fa-solid fa-images"></i> Screenshots </button>
@@ -382,14 +384,11 @@
 																<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 															</div>
 															<div class="modal-body">
-																<img src="LTF New Tab.jpg" loading="lazy" alt="LTF New Tab Page Screenshot" class="img-fluid d-block mx-auto rounded">
+																<img src="Resources/Images/WebCV/WebCV1.jpg" loading="lazy" alt="LTF New Tab Page Screenshot" class="img-fluid d-block mx-auto border2">
                           			<br>
-																<img src="LTF New Tab.jpg" loading="lazy" alt="LTF New Tab Page Screenshot" class="img-fluid d-block mx-auto rounded">
-                          			<br>
-																<img src="LTF New Tab.jpg" loading="lazy" alt="LTF New Tab Page Screenshot" class="img-fluid d-block mx-auto rounded">
-                          			<br>
-																<img src="LTF New Tab.jpg" loading="lazy" alt="LTF New Tab Page Screenshot" class="img-fluid d-block mx-auto rounded">
-                          			<br>
+																<img src="Resources/Images/WebCV/WebCV2.jpg" loading="lazy" alt="LTF New Tab Page Screenshot" class="img-fluid d-block mx-auto border2">
+																<br>
+																<img src="Resources/Images/WebCV/WebCV3.jpg" loading="lazy" alt="LTF New Tab Page Screenshot" class="img-fluid d-block mx-auto border2">
 															</div>
 															<div class="modal-footer">
 																<button type="button" class="btn" data-bs-dismiss="modal">Chiudi</button>
@@ -451,8 +450,10 @@
 															<h5 class="modal-title" id="exampleModalLabel"> Certificato Europass </h5>
 															<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 														</div>
-														<div class="modal-body">
-															<iframe src="Resources/test.pdf#toolbar=0" width="100%" height="800p" frameborder="0"> </iframe>
+														<div class="modal-body" id="my-container">
+															<!-- 	<iframe src="Resources/Docs/EuropassEQF.pdf#toolbar=0" width="100%" height="800p" frameborder="0"> </iframe> -->
+															<iframe src="https://drive.google.com/file/d/1KeaDF2G5fGwtzD8_fOCHrg9bkACY6l81/preview" width="100%" height="800px" allow="autoplay"></iframe>
+													
 														</div>
 														<div class="modal-footer">
 															<button type="button" class="btn" data-bs-dismiss="modal">Chiudi</button>
@@ -500,6 +501,7 @@
 
 		</div>
 		<!-- -CONTAINER -->
+
       
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
